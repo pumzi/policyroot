@@ -1,6 +1,3 @@
-
-#launches the app
-
 # -*- coding: utf-8 -*-
 #!flask/bin/python
 
