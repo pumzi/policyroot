@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/katherineortiz/GitHub_Repos/policyroot/venv"
+set -gx VIRTUAL_ENV "/home/dagobailon/github_repos/policyroot/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
