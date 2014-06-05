@@ -1,4 +1,21 @@
 # -*- coding: utf-8 -*-
+<<<<<<< HEAD
+from app import app
+from flask import render_template
+
+@app.route('/')
+def index():
+	return render_template('index.html')
+
+@app.route('/sign_up')
+def sign_up():
+	return render_template('sign_up.html')
+
+@app.route('/topics')
+def topics():
+	return render_template('topics.html')
+
+=======
 
 from app import app, db
 from flask import Flask, render_template, redirect
@@ -21,3 +38,4 @@ def add_user():
 		db.session.commit()
 		return redirect('/')
 	return render_template("add_user.html", form = form)
+>>>>>>> bbac8ee1b436ab8737ec10acf5da017000df2890
