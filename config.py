@@ -1,6 +1,11 @@
 import os
 basedir = os.path.abspath(os.path.dirname(__file__)) 
 
+from flask.ext.login import LoginManager
+from config import basedir
+
+lm = LoginManager()
+
 #SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:postgres@localhost/swamperdb'
 #We need the login for the postres sql 
 
