@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 #!/home/elainekamlley/gitrepos/policyroot/venv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==1.4.1','console_scripts','pip'
 __requires__ = 'pip==1.4.1'
-=======
-=======
->>>>>>> 98b890ada43002ddb4629d869dd2a55b86831951
-#!/home/selinamusuta/gitrepos/project_cfp/policyroot/venv/bin/python
-
-# -*- coding: utf-8 -*-
-import re
->>>>>>> 98b890ada43002ddb4629d869dd2a55b86831951
 import sys
 from pkg_resources import load_entry_point
 

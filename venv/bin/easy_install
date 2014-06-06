@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 #!/home/elainekamlley/gitrepos/policyroot/venv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==0.9.8','console_scripts','easy_install'
 __requires__ = 'setuptools==0.9.8'
-=======
-=======
->>>>>>> 98b890ada43002ddb4629d869dd2a55b86831951
-#!/home/selinamusuta/gitrepos/project_cfp/policyroot/venv/bin/python
-
-# -*- coding: utf-8 -*-
-import re
->>>>>>> 98b890ada43002ddb4629d869dd2a55b86831951
 import sys
 from pkg_resources import load_entry_point
 
