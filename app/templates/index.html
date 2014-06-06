@@ -6,7 +6,7 @@
 		<title> policyroot </title>
 		
 		<!-- attach css style sheet -->
-		<link rel="stylesheet" type ="text/css" href="policyroot_style.css">
+		<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='policyroot_style.css') }}">
 
 	<head/>
 
@@ -15,34 +15,38 @@
 
 	<body>
 		<!-- background image -->
-		<img border="0" src="gitrepos/policyroot/app/static/writers-desk.jpg" alt="writers desk" width="100%" height="100%">
-
-		<h1> policyroot </h1>
-		<p> An app that brings community leaders, activists, and policy makers together to share ideas. Let's get to the root of policy together. </p>
+		<div id="index_bg">
+		<!-- <img src ="{{ url_for('static', filename='writers-desk.jpg') }}"> -->
 		
-		<!-- the form for a user to enter their username -->
-		<form>
-		<input type= "email" placeholder="username" name="username">
-		</form>
+		
+			<!-- the translucent div that holds the login forms -->
+			<div class="transbox">
+			<h1 class="logo"> policyroot </h1>
+			<p> An app that brings community leaders, activists, and policy makers together to share ideas. Let's get to the root of policy together. </p>
+				<!-- the form for a user to enter their username -->
+				<form>
+				Username: <input class="input" type= "email" placeholder="username" name="username">
+				</form>
 
-		<!-- the form for a user to enter their password -->
-		<form>
-		<input type="password" placeholder="password" name="pwd">
-		</form>
+				<!-- the form for a user to enter their password -->
+				<form>
+				Password: <input class="input" type="password" placeholder="password" name="pwd">
+				</form>
 
-		<!-- the login button -->
-		<input type="submit" value="Login">
+				<!-- the login button -->
+				<input type="submit" value="Login">
 
 
-		<!--<p><button type="button">Submit</button></p>-->
-		<!-- a link for a user to create an account -->
-		<br>
-		<a href="sign_up.html"> create account </a>
+				<!--<p><button type="button">Submit</button></p>-->
+				<!-- a link for a user to create an account -->
+				<br>
+				<a href="sign_up.html"> create account </a>
 
-		<!-- links for users to go to if they forgot their username or password -->
-		<!-- <p><a href="password.html"> Forget Password</a></p>
-		<a href="username.html">Username?</a> -->
-
+				<!-- links for users to go to if they forgot their username or password -->
+				<!-- <p><a href="password.html"> Forget Password</a></p>
+				<a href="username.html">Username?</a> -->
+			</div>
+		</div>
 	</body>
 
 </html>

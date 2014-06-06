@@ -1,2 +1,47 @@
 /* policyroot_style.css */
 
+/* This is the background image on the index page */
+#index_bg {
+	background-image: url("writers-block.jpg");
+	position: absolute;
+	position: fixed;
+	bacgkground-repeat: no-repeat; 
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* This creates the translucent box containing the login text so that we can see it from the background image */
+div.transbox {
+	position: absolute;
+	left: 10%;
+	top: 20%;
+    width: 400px;
+    height: 400px;
+    margin: 30px 50px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+}
+
+/* This is the formatting for the way the input field looks */
+.input    {
+	width:375px;
+	display:block;
+	border: 1px solid #999;
+	height: 25px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+/* This is the styling for the name policyroot */
+.logo {
+	font-family: "Helvetica", Helvetica, sans-serif;
+	font-size: 50px;
+}
