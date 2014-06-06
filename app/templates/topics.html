@@ -1,4 +1,7 @@
-<html>
+{% extends "base.html" %}
+{% block content %}
+
+
 
 	<head>
 		<title> policyroot - topics </title>
@@ -8,26 +11,16 @@
 	<body>
 		<!-- Section 1: Menu Bar -->
 		<!-- create a navigation bar to hold the buttons -->
-		<div id="navigation_bar">
 		
-			<!-- the website logo -->
-			<h1 id="website_name"> policyroot </h1>
+		
+	<!-- the website logo -->
+			
 
 			<!-- the topics dropdown menu -->
-			<a href="topics.html"><div class="nav_button"> Topics </div></a>
-
-			<a href="topics.html" data-dropdown="drop1" class="button dropdown"> Topics </a><br>
-			<ul id="drop1" data-dropdown-content class="f-dropdown">
-			  <li><a href="Undocuqueer.html"> Undocuqueer </a></li>
-			  <li><a href="pathway.html"> Pathway to Citizenship </a></li>
-			  <li><a href="know_your_rights.html"> Know Your Rights </a></li>
-			  <li><a href ="colonialism.html"> Colonialism </a></li>
-			</ul>
+			
 
 			<!-- the logout button (redirects to login page) -->
-			<a href="index.html"><div class="nav_button"> Logout </div></a>
-			
-		</div>
+		
 
 
 		<!-- Section 2: User Profile Information -->
@@ -38,18 +31,18 @@
 		<!-- topics page header -->
 		<h1>Immigration<h1>
 		<h2> Topics: </h2>
-		<a href="Undocuqueer.html">Undocuqueer:</a> 
+		<a href="{{ url_for('Undocuqueer') }}">Undocuqueer:</a> 
 		<br>
 		<br>
-		<a href="Pathway.html">Pathway to:</a>
+		<a href="{{ url_for('pathway') }}">Pathway to:</a>
 		<br>
 		<br>
-		<a href="Know_Your_Rights.html">Know Your Rights:</a>
+		<a href="{{ url_for('know_your_rights') }}">Know Your Rights:</a>
 		<br>
 		<br>
-		<a href="Colonialism.html">Colonialism:</a>
+		<a href="{{ url_for('colonialism') }}">Colonialism:</a>
 		
 
 	</body>
 
-</html>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    
+   
+    
+  </head>
+  <body>
+<center> 
+	<h1> policyroot </h1>    
+<form method="post" action="{{ url_for('topics') }}"> 
+<p><button type="submit" name="logout">Logout</button></p> 
+</form> 
+
+<select>
+	<option value="Topics">Topics</option>
+  	<option value="Undocuqueer">UndocuQueer</option>
+  	<option value="Pathway">Pathway</option>
+  	<option value="Know Your Rights">Know Your Rights</option>
+  	<option value="Colonialism">Colonialism</option>
+</select>
+
+</center>
+
+    {% block content %}{% endblock %}
+      
+
+
+
+  </body>
+</html>

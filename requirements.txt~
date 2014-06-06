@@ -1,0 +1,30 @@
+Flask==0.10.1
+Flask-SQLAlchemy==1.0
+Flask-WTF==0.9.5
+Jinja2==2.7.2
+MarkupSafe==0.23
+SQLAlchemy==0.9.4
+WTForms==1.0.5
+Werkzeug==0.9.4
+argparse==1.2.1
+itsdangerous==0.24
+psycopg2==2.5.3
+wsgiref==0.1.2
+<<<<<<< HEAD
+flask-login
+flask-mail
+=======
+<<<<<<< HEAD
+flask-login
+flask-mail
+
+=======
+<<<<<<< HEAD
+flask-mail
+flask-login
+=======
+flask-login
+flask-mail
+>>>>>>> 3cafd111f342e82a825bcb1560ce7325de0a501e
+>>>>>>> 6017c718b7793d4ab3322f3d25fa68119177e345
+>>>>>>> 2bc3a6d51c20dbc92ce4c7bab919907d02cc110a
