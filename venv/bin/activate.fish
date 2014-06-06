@@ -33,7 +33,11 @@ end
 deactivate nondestructive
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/elainekamlley/gitrepos/policyroot/venv"
+=======
+set -gx VIRTUAL_ENV "/home/selinamusuta/gitrepos/project_cfp/policyroot/venv"
+>>>>>>> 98b890ada43002ddb4629d869dd2a55b86831951
 =======
 set -gx VIRTUAL_ENV "/home/selinamusuta/gitrepos/project_cfp/policyroot/venv"
 >>>>>>> 98b890ada43002ddb4629d869dd2a55b86831951
