@@ -24,7 +24,7 @@ def sign_up():
 		db.session.add(user)
 		db.session.commit()
 		return redirect('/')
-	return render_template('topics.html', form = form)
+	return render_template('sign_up.html', form = form)
 
 @app.route('/topics')
 def topics():
