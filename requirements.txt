@@ -10,3 +10,6 @@ argparse==1.2.1
 itsdangerous==0.24
 psycopg2==2.5.3
 wsgiref==0.1.2
+flask-login
+flask-mail
+
