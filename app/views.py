@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from app import app, db, lm
+from app import app, db #, lm
 from flask import render_template, redirect
 from flask.ext.login import login_user 
 from models import Post, User
