@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from app import app, db #, lm
 from flask import render_template, redirect
-from flask.ext.login import login_user 
+from flask.ext.login import login_user, logout_user, login_required
 from models import Post, User
 from forms import NewUserForm, LoginForm
 from emails import follower_notification
@@ -24,9 +24,9 @@ def sign_up():
 		db.session.add(user)
 		db.session.commit()
 		return redirect('/')
-	return render_template('sign_up.html')
+	return render_template('topics.html', form = form)
 
-@app.route('/topics', methods = ['GET', 'POST'])
+@app.route('/topics')
 def topics():
 	return render_template('topics.html')
 
