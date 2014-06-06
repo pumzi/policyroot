@@ -8,3 +8,6 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 
 from app import views, models 
+
+from flask.ext.mail import Mail
+mail = Mail(app)
