@@ -10,5 +10,21 @@ argparse==1.2.1
 itsdangerous==0.24
 psycopg2==2.5.3
 wsgiref==0.1.2
+<<<<<<< HEAD
 flask-login
 flask-mail
+=======
+<<<<<<< HEAD
+flask-login
+flask-mail
+
+=======
+<<<<<<< HEAD
+flask-mail
+flask-login
+=======
+flask-login
+flask-mail
+>>>>>>> 3cafd111f342e82a825bcb1560ce7325de0a501e
+>>>>>>> 6017c718b7793d4ab3322f3d25fa68119177e345
+>>>>>>> 2bc3a6d51c20dbc92ce4c7bab919907d02cc110a

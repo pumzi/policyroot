@@ -52,7 +52,7 @@ USER STORIES:
 	5) As an activist, I want to have a place where I can freely document my thoughts in regards to the work I am doing, so that I can get resources from other places
 
 
-Topics:
+TOPICS:
 	Immigration:
 		-Undocuqueer
 		-Pathway

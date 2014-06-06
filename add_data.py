@@ -17,7 +17,7 @@ password =["bsmith1", "kortiz1", "dbailon1", "smusuta1", "ekammley1"]
 role = ["community organizer","community organizer", "policy maker","community organizer", "policy maker"]
 
 #Don't worry about indentation for dictionaries
-for advocate in [0,1,2,3,4,5,6]:
+for u in [0,1,2,3,4,5,6,7]:
 	advocates = {"firstname": firstname[u], 
 			 "lastname": lastname[u], 
 			 "username": username[u], 
@@ -26,6 +26,8 @@ for advocate in [0,1,2,3,4,5,6]:
 			 "password": password[u],
 			 "role": role[u]
 			 }
+
+	print advocates
 
 
 

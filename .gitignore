@@ -1,0 +1,5 @@
+venv
+*.pyc
+config.py
+.gitignore
+requirements.txt
