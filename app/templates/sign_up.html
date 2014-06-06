@@ -10,29 +10,30 @@
 
 </body>
 
-<form>
-First Name: <input type="First Name" name="Firs Name" placeholder="Primer Nombre">
+<form action= "" method= "post" name= "newuser">
+	{{form.hidden_tag()}}
+First Name: {{form.firstname(size=30)}}
 <br>
 <br>
-Last Name: <input type="Last Name" name="Last Name" placeholder="Apellido">
+Last Name: {{form.lastname(size=30)}}
 <br>
 <br>
-Second Last Name: <input type="Second Last Name" name"Apellido" placeholder="Apellido">
+Second Last Name: {{form.secondlastname(size=30)}}
 <br>
 <br>
-State: <input type="s" name="state" placeholder="state">
+State: {{form.state(size=30)}}
 <br>
 <br>
-Email: <input type="Email" name="Email" placeholder="Correo Electronico">
+Email: {{form.email(size=30)}}
 <br>
 <br>
-organization: <input type="organization" name="organization" placeholder="organizacion">
+organization: {{form.organzation(size=30)}}
 <br>
 <br>
-User Name:<input type="text" name="User Name" Placeholder="Nombre de Usuario">
+User Name: {{form.username(size=30)}}  
 <br>
 <br>
-Password:<input type="password" name="pwd">
+Password: {{form.password(size=30)}}
 
 <p><input type="submit" value="Submit"></p>
 
