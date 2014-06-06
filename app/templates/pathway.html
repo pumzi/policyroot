@@ -1,25 +1,33 @@
-{% extends "base.html" %}
+<!-- pathway.html -->
+
+{% extends "base.html" %}<!--this is an inheretance template the html for things that will remain the same in several pages-->
 {% block content %}
 
+<html>
 
-<head>
+	<head>
+		
+		<!-- title of the page -->
+		<title> Pathway to Citizenship policyroot </title>
+
+		<!-- attach css style sheet -->
+		<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='policyroot_style.css') }}">
+	
+	</head>
+
+	<body>
+		<!-- discussion forum header -->
+		<div class="forum_banner">
+		<h1 class="topic_header"> Pathway to Citizenship <h1>
+		<h3 class="topic_prompt"> What are some of the issues you are facing on your pathway to citizenship?</h3>
+		</div>
+
+		<!-- discussion topic image -->
+		<div id="pathway_image"></div>
 
 
-</head>
+	</body>
 
-<body>
-
-<h1> Pathway... <h1>
-<br>
-<br>
-<h2> What are some issue you are facing on your pathway to citizenship?</h2>
-
-<textarea>
-
-
-
-</textarea>
-
-</body>
+</html>
 
 {% endblock %}

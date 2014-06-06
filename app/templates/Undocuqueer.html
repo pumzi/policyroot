@@ -1,26 +1,31 @@
 {% extends "base.html" %}<!--this is an inheretance template the html for things that will remain the same in several pages-->
 {% block content %}
 
+<html>
+
+	<head>
+		
+		<!-- title of the page -->
+		<title> Undocuqueer policyroot </title>
+
+		<!-- attach css style sheet -->
+		<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='policyroot_style.css') }}">
+	
+	</head>
+
+	<body>
+		<!-- discussion forum header -->
+		<div class="forum_banner">
+		<h1 class="topic_header"> UndocuQueer <h1>
+		<h3 class="topic_prompt"> What are some effective ways to incorporate the UndocuQueer experience in the immigration movement?</h3>
+		</div>
+
+		<!-- discussion topic image -->
+		<div id="undocuqueer_image"></div>
 
 
-<head>
+	</body>
 
-
-</head>
-
-<body>
-
-<h1> UndocuQueer <h1>
-<br>
-<br>
-<h2> What are some effective ways to incorporate the UndocuQueer experience in the immigration movement?</h2>
-
-<textarea>
-
-
-
-</textarea>
-
-</body>
+</html>
 
 {% endblock %}

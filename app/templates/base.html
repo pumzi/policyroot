@@ -1,13 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    
+    <head>
+      <!-- title of the page -->
+      
+      <!-- attach css style sheet -->
+      <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='policyroot_style.css') }}">
    
-    
-  </head>
+    </head>
+  
+
+
   <body>
 <center> 
-	<h1> policyroot </h1>    
+	<h1 class="logo"> policyroot </h1>    
 <form method="post" action="{{ url_for('topics') }}"> 
 <p><button type="submit" name="logout">Logout</button></p> 
 </form> 

@@ -45,3 +45,45 @@ div.transbox {
 	font-family: "Helvetica", Helvetica, sans-serif;
 	font-size: 50px;
 }
+
+#undocuqueer_image {
+	background-image: url("iamundocuqueer.jpg");
+	position: absolute;
+	top: 30%;
+	right: 15%;
+	width: 640px;
+	height: 280px;
+	display: inline-block;
+
+}
+
+#pathway_image {
+	background-image: url("road.jpg");
+	position: absolute;
+	top: 30%;
+	right: 15%;
+	width: 640px;
+	height: 280px;
+	display: inline-block;
+
+}
+
+.forum_banner {
+	position: absolute;
+	display: inline-block;
+	left: 15%;
+	top: 30%;
+	width: 500px;
+
+}
+
+.topic_header {
+	font-family: "Helvetica", Helvetica, sans-serif;
+	font-size: 35px;
+}
+
+.topic_prompt {
+	font-family: "Helvetica", Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: italic;
+}
