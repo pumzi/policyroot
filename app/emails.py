@@ -1,5 +1,5 @@
 from flask.ext.mail import Message
-from app import mail
+#from app import mail
 from threading import Thread
 from decorators import async
 
