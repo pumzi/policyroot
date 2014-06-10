@@ -24,17 +24,18 @@
 			<h1 class="logo"> policyroot </h1>
 			<p> An app that brings community leaders, activists, and policy makers together to share ideas. Let's get to the root of policy together. </p>
 				<!-- the form for a user to enter their username -->
-				<form>
-				Username: <input class="input" type= "email" placeholder="username" name="username">
-				</form>
-
+				<form action="" method="post" >
+				{{form.hidden_tag()}}
+	
+				Username: {{form.email}}
+				
 				<!-- the form for a user to enter their password -->
-				<form>
-				Password: <input class="input" type="password" placeholder="password" name="pwd">
+				Password: {{form.password}}
+				<input type="submit" value="Login">
+
 				</form>
 
 				<!-- the login button -->
-				<input type="submit" value="Login">
 
 
 				<!--<p><button type="button">Submit</button></p>-->

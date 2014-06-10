@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
-from app import app, db#, lm
+from app import app, db, lm
 from flask import render_template, redirect
 from flask.ext.login import login_user, logout_user, login_required
 from models import Post, User
 from forms import NewUserForm, LoginForm, NewPostForm
 from emails import follower_notification
 
-@app.route('/')
-@login_required
+@app.route('/', methods = ['GET','POST'])
 def index():
   	form = LoginForm()
 	if form.validate_on_submit():
@@ -24,7 +23,7 @@ def sign_up():
 		form.populate_obj(user)
 		db.session.add(user)
 		db.session.commit()
-		return redirect('/')
+		return redirect('/topics')
 	return render_template('sign_up.html', form = form)
 
 	form = NewUserForm()			#calling on NewUserForm from forms.py
@@ -38,6 +37,7 @@ def sign_up():
 
 
 @app.route('/topics')
+@login_required
 def topics():						#This is the topics page that has hyperlinks to each subtopic
 	return render_template('topics.html')
 
@@ -100,4 +100,10 @@ def follow(nickname):
     # ...
     follower_notification(user, g.user)
     return redirect(url_for('user', nickname = nickname))
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect("/")
+
 

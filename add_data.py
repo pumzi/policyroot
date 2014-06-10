@@ -26,9 +26,7 @@ for u in [0,1,2,3,4]:
 			 "password": password[u],
 			 "role": role[u]
 			 }
-
-	u = models.User(**advocates)
-
+	u = models.User(**advocates)	# Selina: Add comments about what this is about (related to dictionary passing)
 	db.session.add(u)
 	db.session.commit()
 
