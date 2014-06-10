@@ -10,7 +10,7 @@ class User(db.Model): #When you are making a new class you capitialize the title
 	password = db.Column(db.String(12))
 	role = db.Column(db.String(100))
 	location = db.Column(db.String(100))
-	post = db.relationship('Post', backref = 'author')
+	post = db.relationship('Post', backref = 'activist')
 
 class Post(db.Model):
 	id = db.Column(db.Integer, primary_key = True)

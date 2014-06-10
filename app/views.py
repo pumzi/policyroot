@@ -18,7 +18,6 @@ def index():
 
 @app.route('/sign_up', methods = ['GET', 'POST'])
 def sign_up():
-<<<<<<< HEAD
 	form = NewUserForm()
 	if form.validate_on_submit():
 		user = User()
@@ -27,7 +26,7 @@ def sign_up():
 		db.session.commit()
 		return redirect('/')
 	return render_template('sign_up.html', form = form)
-=======
+
 	form = NewUserForm()			#calling on NewUserForm from forms.py
 	if form.validate_on_submit():	#if statement: saying the if the submit button is pushed then,
 		user = User() 				#it prepares a new row for the info to be passed in
@@ -36,7 +35,7 @@ def sign_up():
 		db.session.commit()			#then commits and saves to the database
 		return redirect('/')		#after it is submitted, it redirects to...
 	return render_template('.html', form = form) # the topics page
->>>>>>> 9650b813e10ff9da1398f85b29f69bdf2b55b149
+
 
 @app.route('/topics')
 def topics():						#This is the topics page that has hyperlinks to each subtopic
