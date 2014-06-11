@@ -3,7 +3,7 @@ from flask.ext.login import LoginManager
 
 
 # Section 2: Database configuration stuff
-SQLALCHEMY_DATABASE_URI = 'postgresql://aliya:Popcorn13@localhost/policyroot'
+SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:postgres@localhost/policyroot'
 
 
 # Section 3: Configuring our forms tool

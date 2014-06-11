@@ -49,8 +49,8 @@ div.transbox {
 #undocuqueer_image {
 	background-image: url("iamundocuqueer.jpg");
 	position: absolute;
-	top: 30%;
-	right: 15%;
+	top: 50%;
+	right: 20%;
 	width: 640px;
 	height: 280px;
 	display: inline-block;

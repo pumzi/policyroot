@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
 from app import app, db, lm
-from flask import render_template, redirect
+from flask import render_template, redirect, flash
 from flask.ext.login import login_user, logout_user, login_required
 from models import Post, User
 from forms import NewUserForm, LoginForm, NewPostForm
 from emails import follower_notification
+
+@lm.user_loader
+def load_user(userid):
+    return User.query.get(int(userid))
 
 @app.route('/', methods = ['GET','POST'])
 def index():
@@ -12,7 +16,8 @@ def index():
 	if form.validate_on_submit():
 		user = form.get_user()
 		login_user(user)
-		return redirect('/')
+		return redirect('/topics')
+	flash("Failed to login.")
 	return render_template('index.html', form = form)
 
 @app.route('/sign_up', methods = ['GET', 'POST'])
@@ -43,7 +48,7 @@ def topics():						#This is the topics page that has hyperlinks to each subtopic
 
 @app.route('/Undocuqueer', methods = ['GET', 'POST'])
 def Undocuqueer():
-	form = NewPostForm(Form)		#calling on NewPostForm from forms.py
+	form = NewPostForm()		#calling on NewPostForm from forms.py
 	if form.validate_on_submit():	#if statement: saying the if the submit button is pushed then,
 		post = Post()				#it prepares a new row for the info to be passed in
 		form.populate_obj(post)		#then populates new post info entered by user
@@ -56,7 +61,7 @@ def Undocuqueer():
 
 @app.route('/pathway', methods = ['GET', 'POST'])
 def pathway():
-	form = NewPostForm(Form)
+	form = NewPostForm()
 	if form.validate_on_submit():
 		post = Post()
 		form.populate_obj(post)
@@ -69,7 +74,7 @@ def pathway():
 
 @app.route('/know_your_rights', methods = ['GET', 'POST'])
 def know_your_rights():
-	form = NewPostForm(Form)
+	form = NewPostForm()
 	if form.validate_on_submit():
 		post = Post()
 		form.populate_obj(post)
@@ -82,7 +87,7 @@ def know_your_rights():
 
 @app.route('/colonialism', methods = ['GET', 'POST'])
 def colonialism():
-	form = NewPostForm(Form)
+	form = NewPostForm()
 	if form.validate_on_submit():
 		post = Post()
 		form.populate_obj(post)

@@ -2,6 +2,8 @@ from flask.ext.wtf import Form
 from wtforms import TextField, TextAreaField, PasswordField
 from wtforms.validators import Required 
 
+from models import User
+
 class NewUserForm(Form):
 	firstname = TextField('firstname')
 	lastname = TextField('lastname')
@@ -21,3 +23,6 @@ class NewPostForm(Form):
 class LoginForm(Form):
 	email = TextField('email', validators = [Required(message="We need to know your email address.")])
 	password = PasswordField('password', validators = [Required(message="We need your password.")])
+
+	def get_user(self):
+		return User.query.filter_by(email=self.email.data).first()

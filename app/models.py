@@ -12,6 +12,16 @@ class User(db.Model): #When you are making a new class you capitialize the title
 	location = db.Column(db.String(100))
 	post = db.relationship('Post', backref = 'activist') 
 
+	def is_active(self):
+		return True 
+	def get_id(self):
+		return self.id
+	def is_authenticated(self):
+		return True
+	def is_anonymous(self):
+		return False
+
+
 class Post(db.Model):
 	id = db.Column(db.Integer, primary_key = True)
 	title = db.Column(db.String(150))
@@ -19,3 +29,5 @@ class Post(db.Model):
 	topic = db.Column(db.String(100))
 	content = db.Column(db.Text)
 	user_id = db.Column(db.Integer, db.ForeignKey('user.id')) #when you are refering to a class, it is lowercase
+
+
